@@ -1,0 +1,38 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+body{
+
+}
+.bg{
+    @apply w-screen h-screen flex bg-cover justify-center items-center relative;
+    background-image: url('../../img/img5.jpg');
+  background-size: cover;
+  background-position: center;
+    content: "";
+    filter: blur(20px);
+    -webkit-filter: blur(20px);
+    z-index: 1;
+
+}
+
+.passArea{
+    @apply bg-white flex flex-col items-center justify-between w-[450px] h-[400px] rounded-2xl shadow-lg shadow-zinc-800 p-4 z-50 absolute top-1/2 left-1/2 ;
+    transform: translate(-50%, -50%);
+}
+.passArea h1{
+    @apply text-3xl font-bold 
+}
+.passArea p{
+    @apply text-sm mt-4  font-bold text-zinc-500
+}
+form{
+    @apply flex flex-col  mb-[50px] w-full gap-5 p-4 mt-3 
+}
+form .submit {
+    @apply w-full bg-purple-950 h-[50px] text-white mt-3 rounded-md font-bold }
+
+form input{
+    @apply mt-[-7px] shadow-md shadow-stone-300 h-10 rounded-xl pl-3 border-[1px] border-stone-300
+}
